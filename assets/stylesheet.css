@@ -1,0 +1,124 @@
+.pageHeader {
+    color : blue;
+    margin : auto;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pageSubHeader {
+    color : blue;
+    margin : auto;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.textbox_detail {
+    width : 100%;
+}
+
+.textLabel {
+    font-size: 30px;
+}
+
+.textStatus {
+    font-size: 25px;
+    color : #FC4853;
+    font-weight: bold;
+    margin : auto;
+    width : 60%;
+    text-align: center;
+}
+
+.inputDetails {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    position: relative;
+    left : auto;
+    width: 40%;
+    margin : auto;
+}
+
+.inputDetails[type="text"] {
+    height: 35px;
+    font-size: 25px;
+}
+
+.searchButton {
+    margin : auto;
+    margin-top: 1%;
+    width : 100%;
+    background-color : #88F579;   
+    color : black;
+    font-size: 20px;
+}
+
+.textbox_bag_number {
+    margin-bottom: 1%;
+    color: yellow ;
+    width : 100%;
+    background-color: black;
+}
+
+.textbox_bag_number[type="number"], textarea {
+    background-color : black; 
+    height: 100px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.inputBagDetails {
+    position: relative;
+    left : auto;
+    width: 40%;
+    margin : auto;
+}
+
+.receivedButton {
+    margin : auto;
+    width : 78%;
+    background-color : yellow;   
+    color : black;
+    font-size: 20px;
+    margin-right : 2%;
+}
+
+.cancelButton {
+    margin : auto;
+    width : 20%;
+    background-color : #FA8523;   
+    color : black;
+    font-size: 20px;
+}
+
+.deleteButton {
+    margin : auto;
+    width : 100%;
+    background-color : #FC4853;   
+    color : black;
+    font-size: 20px;
+}
+
+.addButton {
+    margin-top : 1%;
+    margin : auto;
+    width : 100%;
+    background-color : #1D8AF6;   
+    color : white;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+.searchTable{
+    position: relative;
+    margin : auto;
+    max-width: 95%;
+}
+
+.htmlLink{
+    position: relative;
+    left: 85% ; 
+    text-align: center;
+    font-weight: bold;
+}
