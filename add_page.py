@@ -4,6 +4,13 @@ import dash_core_components as dcc
 import dash_table 
 import pandas as pd 
 
+def school_list():
+    schools = []
+    df = pd.read_csv('schoolList.csv')
+    for name in df['SchoolName'] : 
+        schools.append(dict(label=name, value=name))
+    return schools
+
 def add_page():
     page_sub_header = html.H2('เพิ่มรายชื่อ', className='pageSubHeader')
 
@@ -37,14 +44,8 @@ def add_page():
     text_school_name = html.P(id='add_page_text_school', children='โรงเรียน', className='textLabel')
     dropdown_school = dcc.Dropdown(
         id='add_page_dropdown_school',
-        options = [
-            dict(label= 'อื่นๆ', value='อื่นๆ'),
-            dict(label= 'นารีรัตน์', value='นารีรัตน์'),
-            dict(label= 'พิริยาลัย', value='พิริยาลัย'),
-            dict(label= 'มารดา', value='มารดา'),
-            dict(label= 'เทพนารี', value='เทพนารี')
-        ],
-        value = None,
+        options = school_list(),
+        value = 'อื่นๆ',
         className = 'school_dropdown'
     )
 

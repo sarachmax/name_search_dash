@@ -113,6 +113,7 @@
 .searchTable{
     position: relative;
     margin : auto;
+    margin-top: 1%;
     max-width: 95%;
 }
 
@@ -122,3 +123,4 @@
     text-align: center;
     font-weight: bold;
 }
+

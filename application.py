@@ -64,7 +64,7 @@ def insert_new_customer(n_clicks, firstname, lastname, product_count, school_nam
     except Exception as E :
         print(E)
     if bag_id != None : 
-        return bag_id, '', '', '', None, ''
+        return bag_id, '', '', 1, school_name, ''
     else :
         return bag_id, firstname, lastname, product_count, school_name, details
 
@@ -205,7 +205,6 @@ def search_customer(n_clicks, firstname, lastname):
     [State('search_page_textbox_bag_number', 'value')]
 )
 def recieved_clicked(n_clicks, bag_id):
-    print("bag_id", bag_id)
     text_status = ""
     try : 
         if n_clicks != None : 
@@ -218,4 +217,4 @@ def recieved_clicked(n_clicks, bag_id):
     return text_status 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, threaded=True)
+    app.run_server(host='0.0.0.0', port='8050', debug=True, threaded=True)
