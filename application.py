@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -217,4 +219,4 @@ def recieved_clicked(n_clicks, bag_id):
     return text_status 
 
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port='8050', debug=True, threaded=True)
+    app.run_server(host='https://0.0.0.0', port='8050', debug=True, threaded=True)
