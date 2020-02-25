@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import dash
+import dash_auth
 import dash_core_components as dcc
 import dash_html_components as html
 
@@ -10,11 +11,18 @@ from search_page import search_page
 from add_page import add_page  
 from view_data_table import show_table
 from data_manager import ConnectDB
+from authen import valid_accounts
 
 import pandas as pd
 
 
 app = dash.Dash(__name__)
+
+auth = dash_auth.BasicAuth(
+    app,
+    valid_accounts
+)
+
 app.config.suppress_callback_exceptions = True
 
 page_header = html.H1('แพร่เซ็นเตอร์', className='pageHeader')
