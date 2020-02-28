@@ -1,9 +1,18 @@
 .pageHeader {
     color : blue;
     margin : auto;
-    width: 50%;
+    width: 80%;
     text-align: center;
     font-weight: bold;
+    font-size: 85px;
+}
+
+#logo {
+    width : 100px;
+    height: 100px;
+    float : right;
+    position : absolute;
+    margin : auto;
 }
 
 .pageSubHeader {

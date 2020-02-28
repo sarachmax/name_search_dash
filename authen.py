@@ -1,5 +1,3 @@
 valid_accounts = {
-    "lee" : "lee",
-    "max" : "max",
-    "korn": "korn",
+    "pharecenter" : "pc054511795",
 }
