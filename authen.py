@@ -1,3 +1,3 @@
 valid_accounts = {
-    "pharecenter" : "pc054511795",
+    "phraecenter" : "pc054511795",
 }
