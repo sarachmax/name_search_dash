@@ -1,9 +1,18 @@
 .pageHeader {
     color : blue;
     margin : auto;
-    width: 50%;
+    width: 80%;
     text-align: center;
     font-weight: bold;
+    font-size: 85px;
+}
+
+#logo {
+    width : 100px;
+    height: 100px;
+    float : right;
+    position : absolute;
+    margin : auto;
 }
 
 .pageSubHeader {
@@ -36,7 +45,7 @@
     margin-bottom: 1%;
     position: relative;
     left : auto;
-    width: 40%;
+    width: 60%;
     margin : auto;
 }
 
@@ -71,7 +80,7 @@
 .inputBagDetails {
     position: relative;
     left : auto;
-    width: 40%;
+    width: 60%;
     margin : auto;
 }
 
@@ -93,11 +102,12 @@
 }
 
 .deleteButton {
-    margin : auto;
-    width : 100%;
+    width : 20%;
     background-color : #FC4853;   
     color : black;
     font-size: 20px;
+    position: relative;
+    left: 80% ;
 }
 
 .addButton {
@@ -119,7 +129,7 @@
 
 .htmlLink{
     position: relative;
-    left: 85% ; 
+    left: 75% ; 
     text-align: center;
     font-weight: bold;
 }

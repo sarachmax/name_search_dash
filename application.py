@@ -15,6 +15,22 @@ from authen import valid_accounts
 
 import pandas as pd
 
+tabs_styles = {
+    'height': '45px'
+}
+tab_style = {
+    'borderBottom': '1px solid #d6d6d6',
+    'padding': '6px',
+    'fontWeight': 'bold'
+}
+
+tab_selected_style = {
+    'borderTop': '1px solid #d6d6d6',
+    'borderBottom': '1px solid #d6d6d6',
+    'backgroundColor': '#119DFF',
+    'color': 'white',
+    'padding': '6px'
+}
 
 app = dash.Dash(__name__)
 
@@ -27,11 +43,12 @@ app.config.suppress_callback_exceptions = True
 
 page_header = html.H1('แพร่เซ็นเตอร์', className='pageHeader')
 main_page = html.Div([
+    html.Img(src=app.get_asset_url('logo.png'), id='logo'),
     page_header,
     dcc.Tabs(id="tabs", children=[
-        dcc.Tab(label='ค้นหา', children=search_page()),
-        dcc.Tab(label='เพิ่มรายชื่อ', children=add_page()),
-    ]),
+        dcc.Tab(label='ค้นหา', children=search_page(), style=tab_style, selected_style=tab_selected_style),
+        dcc.Tab(label='เพิ่มรายชื่อ', children=add_page(), style=tab_style, selected_style=tab_selected_style),
+    ], style=tabs_styles),
 ])
 
 app.layout = html.Div([
