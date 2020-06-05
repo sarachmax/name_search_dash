@@ -15,6 +15,8 @@ from authen import valid_accounts
 
 import pandas as pd
 
+port_config = '8050'
+
 tabs_styles = {
     'height': '45px'
 }
@@ -244,4 +246,4 @@ def recieved_clicked(n_clicks, bag_id):
     return text_status 
 
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port='8050', debug=False, threaded=True)
+    app.run_server(host='0.0.0.0', port=port_config, debug=False, threaded=True)
