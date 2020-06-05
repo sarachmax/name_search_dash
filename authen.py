@@ -4,4 +4,6 @@ valid_accounts = {
     "korn": "korn",
     "phraecenter" : "pc054511795",
     'faii' : 'faii',
+    'weena' : 'weena',
+    'the_wall' : '054613224',
 }
