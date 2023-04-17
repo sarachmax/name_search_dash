@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./assets:/app/assets
+      - ./name.db:/app/name.db
+      - ./schoolList.csv:/app/schoolList.csv
+    ports:
+      - "8050:8050"

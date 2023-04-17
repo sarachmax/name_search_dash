@@ -226,8 +226,6 @@ def search_customer(n_clicks, firstname, lastname):
         status_text = "เกิดข้อผิดพลาด ระบบไม่สามารถหาข้อมูลได้"
     return bag_id, display_df, status_text
 
-
-
 @app.callback(
     Output('search_page_text_search_status-1', 'children'),
     [Input('search_page_button_recieved', 'n_clicks')],
